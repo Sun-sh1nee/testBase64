@@ -11,7 +11,6 @@ export async function GET() {
         .from("images")
         .select("id, name, base64");
 
-    console.log("🔥 ดึงข้อมูลจาก Supabase:", data); // ✅ ตรวจสอบค่าที่ได้
 
     if (error) {
         console.error("❌ Supabase Error:", error);
